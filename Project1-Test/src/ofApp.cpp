@@ -18,6 +18,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofVec2f PeterCenter(w,h);
+    if (ofGetFrameNum() % 120 > 0&& ofGetFrameNum()<=120){
     //Peter's body
     ofSetColor(42,64,238,200);
     ofDrawRectangle(w-2 * r,h-r,2 * r,4.5 * r);
@@ -39,9 +40,11 @@ void ofApp::draw(){
     //mouth
     ofSetColor(255,210,0);
     ofDrawRectangle(w-r/4,h+r/4,r/2,10);
+    }
     
-    
+    if (ofGetFrameNum() % 240 > 0 && ofGetFrameNum()<=240 && ofGetFrameNum()>120){
     //MA1's head
+    ofSetColor(255,210,0);
     ofDrawTriangle(w*2,h,50+w*2,h-50,w*2-75,h-75);
     ofSetColor(255,255,255);
     ofDrawCircle(w*2,h-40,20);
@@ -52,9 +55,9 @@ void ofApp::draw(){
     ofDrawTriangle(w*2,h,50+w*2,h+200,w*2-45,h+200);
     ofSetColor(255,67,152);
     ofDrawTriangle(w*2,h,70+w*2,h+200,w*2-40,h+150);
+    }
     
-    
-    
+    if (ofGetFrameNum() % 480 > 0 && ofGetFrameNum()<=480 && ofGetFrameNum()>240){
     //tree1
     ofSetColor(255,67,152);
     ofDrawTriangle(w*1.5,h-20,w*1.5-60,h+50,w*1.5+60,h+50);
@@ -68,7 +71,9 @@ void ofApp::draw(){
     ofDrawTriangle(w*0.35,h+20,w*0.35-80,h+120,w*0.35+80,h+120);
     ofSetColor(255,255,255);
     ofDrawRectangle(w*0.35-10,h+120,20,40);
+    }
     
+    if (ofGetFrameNum() % 600 > 0 && ofGetFrameNum()<=600 && ofGetFrameNum()>480){
     //cloud
     ofSetColor(255,255,255);
     ofDrawCircle(w * 0.5,h-250,40);
@@ -82,6 +87,7 @@ void ofApp::draw(){
     ofDrawCircle(w * 1.5+50,h-240,30);
     ofDrawCircle(w * 1.5-60,h-250,25);
     ofDrawCircle(w * 1.5+80,h-230,20);
+    }
 
 
 
