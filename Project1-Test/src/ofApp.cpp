@@ -50,16 +50,41 @@ void ofApp::draw(){
     //MA1's body
     ofSetColor(255,255,255);
     ofDrawTriangle(w*2,h,50+w*2,h+200,w*2-45,h+200);
-    ofSetColor(255,67,152,220);
+    ofSetColor(255,67,152);
     ofDrawTriangle(w*2,h,70+w*2,h+200,w*2-40,h+150);
     
     
     
-    //tree
-    ofSetColor(255,67,152,200);
-    ofDrawTriangle(w*1.5,h-20,w*1.5-150,h+200,w*1.5+150,h+200);
-
+    //tree1
+    ofSetColor(255,67,152);
+    ofDrawTriangle(w*1.5,h-20,w*1.5-60,h+50,w*1.5+60,h+50);
+    ofDrawTriangle(w*1.5,h+20,w*1.5-80,h+120,w*1.5+80,h+120);
+    ofSetColor(255,255,255);
+    ofDrawRectangle(w*1.5-10,h+120,20,40);
     
+    //tree2
+    ofSetColor(42,64,238);
+    ofDrawTriangle(w*0.35,h-20,w*0.35-60,h+50,w*0.35+60,h+50);
+    ofDrawTriangle(w*0.35,h+20,w*0.35-80,h+120,w*0.35+80,h+120);
+    ofSetColor(255,255,255);
+    ofDrawRectangle(w*0.35-10,h+120,20,40);
+    
+    //cloud
+    ofSetColor(255,255,255);
+    ofDrawCircle(w * 0.5,h-250,40);
+    ofDrawCircle(w * 0.5-40,h-240,30);
+    ofDrawCircle(w * 0.5+40,h-240,30);
+    
+    //cloud
+    ofSetColor(255,255,255);
+    ofDrawCircle(w * 1.5,h-250,50);
+    ofDrawCircle(w * 1.5-40,h-240,35);
+    ofDrawCircle(w * 1.5+50,h-240,30);
+    ofDrawCircle(w * 1.5-60,h-250,25);
+    ofDrawCircle(w * 1.5+80,h-230,20);
+
+
+
 
 }
 
